@@ -1,0 +1,146 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 65px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    width: 75%;
+    height: 5px;
+    margin: 0 auto 100px auto;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    width: 25%;
+    float: left;
+    padding: 0 25px;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-size: 40px;
+}
+
+.label {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.line {
+    height: 3px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+    .content {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .title-line {
+        margin-bottom: 30px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        width: 100%;
+        float: none;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 25px;
+    }
+
+    .line {
+        width: 25%;
+        margin: 20px auto;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+}
