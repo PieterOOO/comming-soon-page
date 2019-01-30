@@ -1,4 +1,4 @@
-var count = new Date("may 06,2019 08:00:00").getTime();
+var count = new Date("may 06,2018 08:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var d = count - now;
@@ -10,19 +10,19 @@ var x = setInterval(function() {
 
     document.getElementById("days").innerHTML = days;
 
-    if(hours < 10) {
+    if(hours < 10 && hours >= 0) {
         document.getElementById("hours").innerHTML = "0" + hours;
     } else {
         document.getElementById("hours").innerHTML = hours;
     }
 
-    if(minutes < 10) {
+    if(minutes <= 10 && minutes >= 0) {
         document.getElementById("minutes").innerHTML = "0" + minutes;
     } else {
         document.getElementById("minutes").innerHTML = minutes;
     }
 
-    if(seconds < 10) {
+    if(seconds <= 10 && seconds >= 0) {
         document.getElementById("seconds").innerHTML = "0" + seconds;
     } else {
         document.getElementById("seconds").innerHTML = seconds;
