@@ -1,4 +1,4 @@
-var date = prompt("M D,Y H:M:S - month day,year hours:minutes:seconds");
+var date = prompt("M D,Y H:M:S - (may 6,2019 12:00:00) month day,year hours:minutes:seconds");
 
 var count = new Date(date).getTime();
 var x = setInterval(function() {
