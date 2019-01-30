@@ -1,4 +1,6 @@
-var count = new Date("may 06,2018 08:00:00").getTime();
+var date = prompt("M D,Y H:M:S - month day,year hours:minutes:seconds");
+
+var count = new Date(date).getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var d = count - now;
@@ -16,13 +18,13 @@ var x = setInterval(function() {
         document.getElementById("hours").innerHTML = hours;
     }
 
-    if(minutes <= 10 && minutes >= 0) {
+    if(minutes < 10 && minutes >= 0) {
         document.getElementById("minutes").innerHTML = "0" + minutes;
     } else {
         document.getElementById("minutes").innerHTML = minutes;
     }
 
-    if(seconds <= 10 && seconds >= 0) {
+    if(seconds < 10 && seconds >= 0) {
         document.getElementById("seconds").innerHTML = "0" + seconds;
     } else {
         document.getElementById("seconds").innerHTML = seconds;
